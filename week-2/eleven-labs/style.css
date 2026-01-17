@@ -1,0 +1,281 @@
+:root {
+    --color-1: #1C1C1C;
+    --color-2: #fff;
+    --color-1-highlight: #949494;
+    --border-color: #d8d7d7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.part {
+    padding: 3rem;
+}
+
+
+.part-1 {
+    background-color: var(--color-1);
+    color:var(--color-2);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;   
+    row-gap: 4rem;
+}
+
+.head-desc {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.6rem;
+    margin-bottom: 8rem;
+}
+
+.part-1 h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.part-1 h4 {
+    font-size: 1.5rem;
+}
+
+.icon-block {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 10px;
+}
+p {
+    background: transparent;
+    padding: 0;
+}
+
+.icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.i-1 {
+    background-image: url('https://elevenlabs.io/assets/contact-sales/rocket.svg');
+}
+
+.i-2 {
+    background-image: url('https://elevenlabs.io/assets/contact-sales/shield.svg');
+}
+
+.i-3 {
+    background-image: url('https://elevenlabs.io/assets/contact-sales/enterprise.svg');
+}
+
+.cpy-tray {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+    column-gap: 1.2rem;
+}
+
+.cpy {
+    width: 5rem;
+    height: 5rem;
+    /* border: 1px solid #fff; */
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.c-1 {
+    background-image: url('https://elevenlabs.io/assets/contact-sales/cisco-white.svg');
+}
+
+.c-2 {
+    background-image: url('https://elevenlabs.io/assets/contact-sales/deutsche-telekom-white.svg');
+}
+
+.c-3 {
+    background-image: url('https://elevenlabs.io/assets/contact-sales/walt-disney-studios-white.svg');
+}
+
+
+.c-4 {
+    background-image: url('https://elevenlabs.io/assets/contact-sales/nvidia-white.svg');
+}
+
+.c-5 {
+    background-image: url('https://elevenlabs.io/assets/contact-sales/salesforce-white.svg');
+}
+
+.rating-tray {
+    display: flex;
+    column-gap: 6px;
+    justify-content: flex-start;
+}
+
+.star-grp {
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 3px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.str {
+    width: 20px;
+    height: 20px;
+    /* background-image: url('https://cdn.jsdelivr.net/npm/remixicon@4.8.0/icons/System/star-fill.svg');
+    background-color: #fff; */
+}
+
+
+/* part 2 styling */
+
+
+
+.part-2 {
+    background-color: var(--color-2);
+    color:var(--color-1);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.part-2 .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.part-2 .head-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+.part-2 h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.part-2 p {
+    color: var(--color-1-highlight);
+    font-size: 1.2rem;
+}
+
+
+.part-2 form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    row-gap: 1rem;
+}
+
+
+.part-2 input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: 1.4px solid var(--border-color);
+}
+
+.part-2 .bottom-tray {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.part-2 button {
+    padding: 0.9rem 1.4rem;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background-color: var(--color-1-highlight);
+    font-size: 1.2rem;
+    color: var(--color-2);
+}
+
+.part-2 .highlight {
+    width: 5rem;
+    height: 5px;
+    background-color: var(--color-1-highlight);
+    border-radius: 4px;
+}
+
+.part-2 .navigation-tray {
+    display: flex;
+    column-gap: 3px;
+}
+
+.part-2 .h-1 {
+    background-color: #000;
+}
+
+
+/* media queries */
+@media (max-width:1000px) {
+    main {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+}
+
+.part {
+    padding: 2rem;
+}
+
+.head-desc {
+    margin-bottom: 0rem;
+}
+
+.part-1 h4 {
+    font-size: 1.3rem;
+}
+
+.rating-tray {
+    display: none;
+}
+
+.cpy {
+    width: 13rem;
+    height: 3.5rem;
+}
+
+.cpy-tray {
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr 1fr;
+}
+.part-2 .content {
+    width: 400px;
+}
+}
