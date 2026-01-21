@@ -30,3 +30,29 @@ hamburger.addEventListener("click", () => {
         hamburger.classList.replace("ri-menu-line","ri-close-line");
     }
 })
+
+
+var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      centeredSlides: true,
+      spaceBetween: 20,
+      loop:true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        800: {
+            slidesPerView: 3,
+            spaceBetween: 30
+        },
+        0: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        }
+      }
+    });
+
+
+var appendNumber = 7;
+var prependNumber = 1;
