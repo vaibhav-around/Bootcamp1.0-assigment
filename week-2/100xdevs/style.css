@@ -25,6 +25,11 @@
   --slider-line-color: #38bdf8;
   --slider-icon-background: #2dd4bf;
   --slider-swiper-btn-background: #0000007a;
+  --text-off: #ccc5c5;
+  --section3-card-background: #fff;
+  --section3-card-para-foreground: #4a5565;
+  --muted-text: #4d667f;
+
 }
 
 /* global declaration */
@@ -472,6 +477,92 @@ header .header-1 {
   background-color: var(--highlight-foreground);
 }
 
+
+/* Section 2 stylings */
+
+.section-2 {
+  background-color: var(--main-foreground);
+  color: var(--main-background);
+}
+
+.section-heading {
+  margin: 1.8rem 0;
+}
+.section-heading h2 {
+  font-size: 3rem;
+}
+
+.section-heading p {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  color: var(--text-off);
+  text-overflow: ellipsis;
+}
+
+
+.section-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1rem;
+}
+
+.sec3-card {
+  background-color: var(--section3-card-background);
+  color: var(--main-foreground);
+  border-radius: 20px;
+  padding: 14px ;
+}
+
+.sec3-card .bg-image {
+  border: 1px solid #fff;
+  height: 33vh;
+  width: 100%;
+  border-radius: 20px;
+  background-image: url('https://appx-content-v2.classx.co.in/paid_course3/2025-12-21-0_5222861522786815.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  
+}
+
+.sec3-card h3 {
+  font-size: 1.3rem;
+  margin-top: 10px;
+}
+
+.sec3-card p{
+  margin-top: 1.8rem;
+  color: var(--section1-heading-paragraph);
+}
+
+.payment-strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.payment-strip p {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.payment-strip span {
+  text-decoration: line-through;
+  font-size: 1.4rem;
+  margin-left: 10px;
+  color: var(--muted-text);
+  font-weight: 500;
+}
+
+.payment-strip select {
+  padding: 10px;
+  border-radius: 10px;
+  appearance: none;
+}
+
 @media (max-width: 950px) {
   .header-image {
     width: 40vw;
@@ -508,6 +599,11 @@ header .header-1 {
 
   .section-1 .part-2 {
     padding: 0;
+  }
+  .section-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   }
 }
 

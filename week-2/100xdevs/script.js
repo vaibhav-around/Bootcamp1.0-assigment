@@ -1,5 +1,6 @@
 const searchBox = document.querySelector(".search-box");
 const searchInputBox = document.getElementById("search-box");
+const moneyType = ["USD","EUR","GBP","JPY","CNY","INR","AUD","CAD","CHF","SEK","NOK","DKK","NZD","SGD","HKD","KRW","THB","MYR","IDR","PHP","VND","PKR","BDT","LKR","AED","SAR","ZAR","BRL","MXN","TRY"];
 
 searchBox.addEventListener("click", (e) => {
     if(!(searchInputBox.focus())){
@@ -56,3 +57,30 @@ var swiper = new Swiper(".mySwiper", {
 
 var appendNumber = 7;
 var prependNumber = 1;
+
+
+
+// select functionality
+
+let x, i, j, l, a;
+// select all the 'select' tag with custome css
+const selects = document.getElementsByClassName("custom-select");
+// get the length of all the selects 
+const length = selects.length;
+
+console.log(length);
+
+// make a looop from 0 to l select elements
+for(i = 0; i < length; i++){
+    // create a selected element for our custome select
+    selElm = selects[i].getElementsByTagName('select')[0];
+    // getting the length of our money variables
+    optionsLength = moneyType.length;
+    for(j = 0; j < optionsLength; j++){
+        a = document.createElement("option");
+        a.setAttribute("class", "custom-option");
+        a.setAttribute("value", moneyType[j]);
+        a.text = moneyType[j];
+        selects[i].appendChild(a);
+    }
+}
