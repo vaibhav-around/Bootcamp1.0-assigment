@@ -64,11 +64,9 @@ var prependNumber = 1;
 
 let x, i, j, l, a;
 // select all the 'select' tag with custome css
-const selects = document.getElementsByClassName("custom-select");
+const selects = document.getElementsByClassName("form-select");
 // get the length of all the selects 
 const length = selects.length;
-
-console.log(length);
 
 // make a looop from 0 to l select elements
 for(i = 0; i < length; i++){
