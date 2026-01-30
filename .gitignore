@@ -1,1 +1,7 @@
 **/**/data
+**/**/tests
+**/**/.gitignore
+**/**/package-lock.json
+**/**/package.json
+**/**/readme.md
+**/.gitignore
